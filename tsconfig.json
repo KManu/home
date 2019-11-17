@@ -24,6 +24,7 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "types": ["webgl2", "offscreencanvas"],
   }
 }
