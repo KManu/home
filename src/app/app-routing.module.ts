@@ -5,7 +5,18 @@ import { HomeComponent } from './pages/home/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    outlet: 'mainContent'
+  },
+  {
+    path: 'sentiment',
+    loadChildren: './pages/sentiment/sentiment.module#SentimentModule',
+    outlet: 'mainContent'
+  },
+  {
+    path: 'compressor',
+    loadChildren: './pages/neural-compressor/neural-compressor.module#NeuralCompressorModule',
+    outlet: 'mainContent'
   }
 ];
 

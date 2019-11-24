@@ -3,22 +3,34 @@ import { CommonModule } from '@angular/common';
 import { HomeModule } from '../pages/home/home.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { ContentComponent } from './components/content/content.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { CoreMaterialModule } from './core.material.module';
+import { SentimentModule } from 'app/pages/sentiment/sentiment.module';
 
-
-import { AtftModule } from 'atft';
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent],
+  declarations: [FooterComponent, HeaderComponent,
+    MenuComponent,
+    ContentComponent],
   imports: [
     CommonModule,
     HomeModule,
-    AtftModule
+    FlexLayoutModule,
+    CoreMaterialModule,
+    SentimentModule
   ],
-  entryComponents: [FooterComponent, HeaderComponent],
+  entryComponents: [FooterComponent, HeaderComponent,
+    MenuComponent,
+    ContentComponent],
   exports: [
     HeaderComponent,
     FooterComponent,
-    AtftModule
+    MenuComponent,
+    ContentComponent,
+    CoreMaterialModule,
+    SentimentModule
   ]
 })
 export class CoreModule { }
