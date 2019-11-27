@@ -1,6 +1,12 @@
-<div id="appRoot" fxLayoutAlign="center stretch" fxLayout="row">
-  <app-menu fxFlex="33.3%"></app-menu>
+<div fxLayoutAlign="center stretch" fxLayout="column">
   <div fxFlex fxFill>
-    <router-outlet name="mainContent"></router-outlet>
+    <mat-sidenav-container>
+      <mat-sidenav mode="side" opened>
+        <app-menu></app-menu>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
   </div>
 </div>

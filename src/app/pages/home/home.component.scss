@@ -1,4 +1,6 @@
-#homeRoot{
-  min-width: 100%;
-  background: wheat;
+mat-sidenav-container{
+  min-height: 100vh;
+}
+mat-sidenav {
+  width: 33vw;
 }

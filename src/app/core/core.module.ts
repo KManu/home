@@ -7,7 +7,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ContentComponent } from './components/content/content.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CoreMaterialModule } from './core.material.module';
-import { SentimentModule } from 'app/pages/sentiment/sentiment.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -16,10 +16,9 @@ import { SentimentModule } from 'app/pages/sentiment/sentiment.module';
     ContentComponent],
   imports: [
     CommonModule,
-    HomeModule,
     FlexLayoutModule,
     CoreMaterialModule,
-    SentimentModule
+    RouterModule
   ],
   entryComponents: [FooterComponent, HeaderComponent,
     MenuComponent,
@@ -30,7 +29,6 @@ import { SentimentModule } from 'app/pages/sentiment/sentiment.module';
     MenuComponent,
     ContentComponent,
     CoreMaterialModule,
-    SentimentModule
   ]
 })
 export class CoreModule { }

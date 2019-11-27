@@ -1,3 +1,6 @@
-#appRoot{
-  height: 100%;
+mat-sidenav-container{
+  min-height: 100vh;
+}
+mat-sidenav {
+  width: 33vw;
 }
