@@ -1,6 +1,9 @@
 mat-sidenav-container{
   min-height: 100vh;
+  height: 100vh;
 }
-mat-sidenav {
-  width: 33vw;
+#menuButton{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
