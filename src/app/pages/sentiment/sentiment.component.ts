@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SentimentService } from './sentiment.service';
+
 
 @Component({
   selector: 'app-sentiment',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SentimentComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private sentiment: SentimentService
+  ) { }
 
   ngOnInit() {
+    this.sentiment.toxicity();
   }
 
 }

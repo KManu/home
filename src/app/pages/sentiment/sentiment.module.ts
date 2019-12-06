@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SentimentComponent } from './sentiment.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CoreModule } from '@angular/flex-layout';
+import { SentimentService } from './sentiment.service';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [SentimentComponent],
+  providers: [SentimentService],
   imports: [
     RouterModule.forChild(routes),
     CommonModule,

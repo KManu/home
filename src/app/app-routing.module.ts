@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeModule
+    component: HomeComponent
   },
   {
     path: 'sentiment',
