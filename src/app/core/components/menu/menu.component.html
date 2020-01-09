@@ -1,19 +1,23 @@
-<div gdAreas=". . . | . main . | footer footer footer" gdGap="10px"  gdRows="20 60 20" gdColumns="10 auto 10"  id="menuWrapper">
+<div gdAreas=". . . | . main . | footer footer footer" gdGap="10px"  gdRows="10fr 60fr 10fr" gdColumns="5fr auto 5fr"  id="menuWrapper">
     <div id="menuContent" gdArea="main">
       <div id="bio">
         <h1>Hi. </h1>
         <h2>I'm Kwabena Manu.</h2>
-        <p class="padding">A full stack web developer.</p>
-        <p class="padding">An eternally curious nerd. </p>
-        <p class="padding"> An alleged robot llama 🦙</p>
+        <p>A full stack web developer.</p>
+        <p>An eternally curious nerd. </p>
+        <p> An alleged robot llama 🦙</p>
       </div>
       <mat-divider></mat-divider>
+      <!-- TODO Change this to a text summarizer using abstraction -->
       <div fxLayout="column" fxLayoutAlign="center stretch" id="menuLinks">
-        <h2>A few fun things I made:</h2>
-        <a routerLink="/sentiment" routerLinkActive="router-link-active"   mat-button> Sentiment Analyser </a>
+        <h4>Navigation</h4>
+        <a routerLink="/home" routerLinkActive="router-link-active"   mat-button> Home </a>
+
+
+        <!-- <a routerLink="/sentiment" routerLinkActive="router-link-active"   mat-button> Sentiment Analyser </a>
         <a routerLink="/compressor" routerLinkActive="router-link-active"  mat-button> Neural Net Image Compressor </a>
-        <a routerLink="/enhancer" routerLinkActive="router-link-active"  mat-button> Neural Net Image Enhancer </a>
+        <a routerLink="/enhancer" routerLinkActive="router-link-active"  mat-button> Neural Net Image Enhancer </a> -->
       </div>
     </div>
-    <app-footer gdArea="footer"></app-footer>
+    <app-footer gdGridAlign="stretch end"  gdArea="footer"></app-footer>
   </div>
