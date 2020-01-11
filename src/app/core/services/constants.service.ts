@@ -90,7 +90,7 @@ export class ConstantsService {
       events: {
         onhover: {
           enable: true,
-          mode: 'repulse'
+          mode: 'grab'
         },
         onclick: {
           enable: true,
@@ -100,7 +100,7 @@ export class ConstantsService {
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 100,
           line_linked: {
             opacity: 1
           }
