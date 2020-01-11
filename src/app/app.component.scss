@@ -9,13 +9,15 @@ mat-sidenav-container{
 }
 
 .mat-drawer{
-  background: rgba(white, 0.8);
+  background: rgba(#37464f, 0.8);
+  color: whitesmoke;
 }
+
 
 .mat-drawer-side{
   border: none;
 }
 
 .mat-drawer-container{
-  background-color: white;
+  background-color: transparent;
 }

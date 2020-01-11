@@ -6,7 +6,9 @@ import { CreditsComponent } from './credits.component';
 const routes: Routes = [{ path: '', component: CreditsComponent }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    RouterModule.forChild(routes)
+  ],
   exports: [RouterModule]
 })
 export class CreditsRoutingModule { }
