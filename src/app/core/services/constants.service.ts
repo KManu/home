@@ -19,7 +19,7 @@ export class ConstantsService {
   public particlesConfig = {
     particles: {
       number: {
-        value: 50,
+        value: 20,
         density: {
           enable: true,
           value_area: 800
@@ -65,7 +65,7 @@ export class ConstantsService {
       },
       line_linked: {
         enable: true,
-        distance: 150,
+        distance: 300,
         color: '#000',
         opacity: 0.4,
         width: 1

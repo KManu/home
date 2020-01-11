@@ -27,7 +27,8 @@ const routes: Routes = [
   {
     path: 'enhancer',
     loadChildren: () => import('./pages/neural-enhance/neural-enhance.module').then(m => m.NeuralEnhanceModule)
-  }
+  },
+  { path: 'shrinker-app', loadChildren: () => import('./pages/shrinker-app/shrinker-app.module').then(m => m.ShrinkerAppModule) }
 ];
 
 @NgModule({
