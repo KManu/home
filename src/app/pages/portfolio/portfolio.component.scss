@@ -1,0 +1,24 @@
+.contentWrapper{
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
+
+  .contentContainer{
+    width: 100%;
+
+    p{
+      line-height: 2rem;
+    }
+    mat-list-item{
+      color: whitesmoke;
+
+      a{
+        color: whitesmoke;
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
