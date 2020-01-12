@@ -119,8 +119,15 @@
               "devServerTarget": "home:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/kmanu.github.io/"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "home"
 }
