@@ -2,12 +2,14 @@
   <div fxFlex fxFill>
     <mat-sidenav-container>
       <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
-        [ngStyle]="{'width': '100vw'}" [ngStyle.gt-xs]="{'width': '33vw'}" opened>
+        [ngStyle]="{'width': '66vw'}" [ngStyle.gt-xs]="{'width': '33vw'}" opened>
         <app-menu></app-menu>
       </mat-sidenav>
       <mat-sidenav-content>
+        <button [fxShow]="!snav.opened" fxHide.gt-xs (click)="snav.toggle()" id="menuButton" mat-icon-button>
+          <mat-icon>menu</mat-icon>
+        </button>
         <router-outlet></router-outlet>
-        <button [fxShow]="!snav.opened" fxHide.gt-xs (click)="snav.toggle()" id="menuButton" mat-fab>Menu</button>
       </mat-sidenav-content>
     </mat-sidenav-container>
   </div>
