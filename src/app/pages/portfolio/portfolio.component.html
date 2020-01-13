@@ -1,18 +1,18 @@
-<div class="contentWrapper" gdAreas=". . . | . main . | . . ." gdGap="10px" gdRows="10fr 60fr 10fr"
-  gdColumns="19.1fr 61.80fr 19.1fr">
+<div class="contentWrapper" gdAreas=". . . | . main . | . . ." gdGap="10px" gdRows.gt-xs="10fr 60fr 10fr"
+  gdRows="10fr 80fr 10fr" gdColumns.gt-xs="19.1fr 61.80fr 19.1fr" gdColumns="10fr 80fr 10fr">
   <div class="contentContainer transluscentBack" gdArea="main">
     <div class="padding">
       <h2 mat-subheader>Portfolio</h2>
       <mat-divider></mat-divider>
       <mat-list>
-          <mat-list-item *ngFor="let project of projects">
-            <h3 matLine>
-              <a rel="noreferrer" target="_blank" href="{{project.link}}">{{project.name}}</a>
-            </h3>
-            <p matLine>
-              {{project.description | titlecase}}
-            </p>
-          </mat-list-item>
+        <mat-list-item *ngFor="let project of projects">
+          <h3 matLine>
+            <a rel="noreferrer" target="_blank" href="{{project.link}}">- {{project.name}}</a>
+          </h3>
+          <p matLine>
+            {{project.description | titlecase}}
+          </p>
+        </mat-list-item>
 
       </mat-list>
     </div>

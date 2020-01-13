@@ -5,12 +5,15 @@
 
   .contentContainer{
     width: 100%;
+    overflow: auto;
 
-    p{
-      line-height: 2rem;
+    h3, p{
+      line-height: 1.5rem;
     }
     mat-list-item{
       color: whitesmoke;
+      padding-top: 16px;
+      padding-bottom: 16px;
 
       a{
         color: whitesmoke;
