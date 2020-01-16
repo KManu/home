@@ -9,6 +9,7 @@
         <button [fxShow]="!snav.opened" fxHide.gt-xs (click)="snav.toggle()" id="menuButton" mat-icon-button>
           <mat-icon>menu</mat-icon>
         </button>
+
         <router-outlet></router-outlet>
       </mat-sidenav-content>
     </mat-sidenav-container>

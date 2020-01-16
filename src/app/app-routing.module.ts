@@ -6,12 +6,12 @@ import { HomeModule } from './pages/home/home.module';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'about',
     pathMatch: 'full'
   },
   {
     path: '*',
-    redirectTo: 'home',
+    redirectTo: 'about',
     pathMatch: 'full'
   },
   {
