@@ -8,12 +8,34 @@
     </div>
     <mat-divider></mat-divider>
     <div fxLayout="column" fxLayoutAlign="center stretch" id="menuLinks">
-      <h4>Navigation</h4>
-      <a routerLink="/about" routerLinkActive="router-link-active" mat-button> About </a>
-      <a routerLink="/portfolio" routerLinkActive="router-link-active" mat-button> Portfolio </a>
+      <div class="pt2">
+        <a routerLink="/about" routerLinkActive="router-link-active" mat-button>
+          About
+        </a>
+      </div>
+      <div class="pb2">
+        <a class="fit" routerLink="/portfolio" routerLinkActive="router-link-active" mat-button>
+          Portfolio
+        </a>
+      </div>
       <mat-divider></mat-divider>
-      <a mat-button rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kwabena-manu/">LinkedIn</a>
-      <a mat-button rel="noreferrer" target="_blank" href="https://github.com/KManu">Github</a>
+      <div class="pt2">
+        <a mat-button rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kwabena-manu/">
+          LinkedIn
+          <mat-icon class="right mt1" aria-hidden="false" aria-label="open_in_new icon">open_in_new</mat-icon>
+        </a>
+      </div>
+      <div class="pb2">
+        <a mat-button rel="noreferrer" target="_blank" href="https://github.com/KManu">
+          Github
+          <mat-icon class="right mt1" aria-hidden="false" aria-label="open_in_new icon">open_in_new</mat-icon>
+        </a>
+      </div>
+
+
+
+
+
       <!--<a mat-button rel="noreferrer" target="_blank" href="https://twitter.com/KM__U">Twitter</a>
       <mat-divider></mat-divider>
        <a routerLink="/credits" routerLinkActive="router-link-active" mat-button> Legal </a> -->

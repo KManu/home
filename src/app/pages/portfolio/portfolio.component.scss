@@ -6,6 +6,8 @@
   .contentContainer{
     width: 100%;
     overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 
 
     h3, p{
@@ -19,12 +21,34 @@
       a{
         color: whitesmoke;
         text-decoration: none;
-      }
-      a:hover{
-        text-decoration: underline;
+        span{
+          position: relative;
+        }
+        span::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background-color: white;
+          transform-origin: bottom right;
+          transform: scaleX(0);
+          transition: transform 0.5s ease;
+        }
+
+        span:hover::before {
+          transform-origin: bottom left;
+          transform: scaleX(1);
+        }
       }
     }
   }
+
+  .contentContainer::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
 }
 ::ng-deep  .mat-list .mat-list-item{
   height:initial!important;

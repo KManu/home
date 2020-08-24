@@ -7,7 +7,7 @@ import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './pages/home/home.module';
 
-import { ParticlesModule } from 'ng-particle';
+import { NgParticlesModule } from 'ng-particles';
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +18,7 @@ import { ParticlesModule } from 'ng-particle';
     CoreModule,
     BrowserAnimationsModule,
     HomeModule,
-    ParticlesModule
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

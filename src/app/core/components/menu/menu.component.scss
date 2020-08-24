@@ -13,4 +13,13 @@
   .padding{
     padding: 0 16px;
   }
+
+  div a {
+    width: 100%;
+    text-align: left;
+
+    mat-icon{
+      font-size: 1rem;
+    }
+  }
 }

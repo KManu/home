@@ -25,3 +25,14 @@ mat-sidenav-container{
 mat-icon{
   color: white;
 }
+
+#main-content{
+  position: relative;
+}
+
+#particlesElement{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

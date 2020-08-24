@@ -16,10 +16,10 @@ export class ConstantsService {
     }
   ];
 
-  public particlesConfig = {
+  public defaultParticlesConfig = {
     particles: {
       number: {
-        value: 20,
+        value: 15,
         density: {
           enable: true,
           value_area: 800
@@ -62,7 +62,12 @@ export class ConstantsService {
         distance: 300,
         color: '#fff',
         opacity: 0.8,
-        width: 1
+        width: 1,
+        triangles: {
+          enable: true,
+          color: '#ffffff',
+          opacity: 0.01
+        }
       },
       move: {
         enable: true,
@@ -82,11 +87,11 @@ export class ConstantsService {
       detect_on: 'canvas',
       events: {
         onhover: {
-          enable: true,
+          enable: false,
           mode: 'grab'
         },
         onclick: {
-          enable: true,
+          enable: false,
           mode: 'push'
         },
         resize: true
@@ -110,7 +115,7 @@ export class ConstantsService {
           duration: 0.4
         },
         push: {
-          particles_nb: 4
+          particles_nb: 1
         },
         remove: {
           particles_nb: 2
@@ -119,6 +124,8 @@ export class ConstantsService {
     },
     retina_detect: true
   };
+
+  public
 
   constructor() { }
 }
