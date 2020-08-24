@@ -9,7 +9,7 @@ import { ConstantsService } from '@core/services/constants.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  @ViewChild('#animate', { static: false }) container: ElementRef;
+  @ViewChild('#animate') container: ElementRef;
 
   myStyle: object = {};
   myParams: object = {};
