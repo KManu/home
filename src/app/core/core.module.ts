@@ -16,8 +16,6 @@ import { RouterModule } from '@angular/router';
     CoreMaterialModule,
     RouterModule
   ],
-  entryComponents: [FooterComponent, HeaderComponent,
-    MenuComponent],
   exports: [
     HeaderComponent,
     FooterComponent,

@@ -12,7 +12,6 @@ import { ParticlesModule } from 'ng-particle';
     CoreModule,
     ParticlesModule
   ],
-  entryComponents: [HomeComponent],
   exports: []
 })
 export class HomeModule { }
