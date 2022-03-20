@@ -1,10 +1,11 @@
-<!-- <Particles id="particlesElement" [options]="particlesConfig"
-(particlesLoaded)="particlesLoaded($event)"></Particles> -->
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
 <div id="main-content">
   <mat-sidenav-container fxFlex fxFlexAlign="center">
 
-    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
-      [ngStyle]="{'width': '66vw'}" [ngStyle.gt-xs]="{'width': '33vw'}" opened>
+    <mat-sidenav class="transluscentBack" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [fixedInViewport]="mobileQuery.matches" [ngStyle]="{'width': '66vw'}" [ngStyle.gt-xs]="{'width': '33vw'}" opened>
       <app-menu></app-menu>
     </mat-sidenav>
 

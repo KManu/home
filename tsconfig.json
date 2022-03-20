@@ -26,5 +26,8 @@
       "dom"
     ],
     "types": ["webgl2", "offscreencanvas"],
-  }
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+  },
 }

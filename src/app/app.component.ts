@@ -1,5 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { Component, ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { ConstantsService } from '@core/services/constants.service';
 
 @Component({
@@ -16,7 +16,6 @@ export class AppComponent implements OnInit, OnDestroy {
   width = 100;
   height = 100;
   particlesConfig;
-  particlesID = 'particlesElement';
 
   private mobileQueryListener: () => void;
 
@@ -39,10 +38,5 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() { }
-
-  particlesLoaded(event) {
-
-  }
-
 
 }
