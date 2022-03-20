@@ -10,22 +10,22 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Mazzuma Mobile App',
       link: 'https://play.google.com/store/apps/details?id=com.cyst.mazzumapp&hl=en',
-      description: 'Cross platform app for mobile money payments.'
+      description: 'Cross platform mobile app for mobile money and cryptocurrency payments in Ghana.'
     },
     {
       name: 'Mazzuma Website',
       link: 'https://mazzuma.com',
-      description: 'Mazzuma product website.'
+      description: 'Mazzuma product website. Mazzuma is a financial service that allows users to make payments using mobile money.'
     },
     {
       name: 'Mazzuma Keyboard',
       link: 'https://play.google.com/store/apps/details?id=com.cyst.mazzumapp&hl=en',
-      description: 'Android keyboard implemented as a Cordova plugin.Android keyboard implemented as a Cordova plugin'
+      description: 'Android keyboard implemented as a Cordova plugin. This was implemented as part of the Mazzuma app and created an android keyboard that users could use to send money without switching to the main Mazzuma app.'
     },
     {
       name: 'Mazzuma WooCommerce Plugin',
       link: 'https://wordpress.org/plugins/woo-mazzuma-payment-gateway/',
-      description: 'WordPress payment plugin for Mazzuma.'
+      description: 'WordPress plugin for Mazzuma. This enabled users to receive mobile money payments in their WooCommerce shops.'
     },
     {
       name: 'Mazzuma Developer Documentation',
@@ -45,7 +45,7 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Insights By CYST',
       link: 'https://insights.teamcyst.com',
-      description: 'Article and social media sentiment analysis tool.'
+      description: 'Sentiment analysis tool for website articles and tweets. Feed it a link and it would retrieve the article or tweet contents and give you it\'s sentiment.'
     },
 
   ];

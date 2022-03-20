@@ -1,29 +1,39 @@
-.contentWrapper{
+.contentWrapper {
   color: whitesmoke;
   width: 100%;
   height: 100%;
 
-  .contentContainer{
+  .contentContainer {
     width: 100%;
     overflow: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
 
 
-    h3, p{
+    h3,
+    p {
       line-height: 1.5rem;
     }
-    mat-list-item{
+
+    .mat-line{
+      padding: 0.5rem 0px;
+    }
+
+    mat-list-item {
       color: whitesmoke;
       padding-top: 16px;
       padding-bottom: 16px;
 
-      a{
+      a {
         color: whitesmoke;
         text-decoration: none;
-        span{
+
+        span {
           position: relative;
         }
+
         span::before {
           content: '';
           position: absolute;
@@ -45,16 +55,43 @@
     }
   }
 
-  .contentContainer::-webkit-scrollbar { /* WebKit */
+  .contentContainer::-webkit-scrollbar {
+    /* WebKit */
     width: 0;
     height: 0;
-}
-}
-::ng-deep  .mat-list .mat-list-item{
-  height:initial!important;
+  }
+
+  .contentContainer>div{
+    height: 100%;
+  }
+
+  mat-list{
+    overflow-y: auto;
+  }
+
+
 }
 
-::ng-deep .mat-list .mat-list-item .mat-line{
+::ng-deep .mat-list .mat-list-item {
+  height: initial !important;
+}
+
+::ng-deep .mat-list .mat-list-item .mat-line {
   word-wrap: break-word;
- white-space: pre-wrap;
+  white-space: pre-wrap;
+}
+
+
+@font-face {
+  font-family: "FontAwesomeSolid";
+  font-weight: bold;
+  font-style: normal;
+  src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+a[target='_blank']::after {
+  content: ' \f35d';
+  font-family: "FontAwesomeSolid";
+  color: inherit;
+  font-size: 0.8rem;
 }
