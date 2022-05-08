@@ -21,12 +21,12 @@
       padding: 0.5rem 0px;
     }
 
-    mat-list-item {
+    mat-expansion-panel {
       color: whitesmoke;
       padding-top: 16px;
       padding-bottom: 16px;
 
-      a {
+      mat-panel-title {
         color: whitesmoke;
         text-decoration: none;
 

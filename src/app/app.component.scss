@@ -2,11 +2,7 @@ mat-sidenav-container{
   min-height: 100vh;
   height: 100vh;
 }
-#menuButton{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+
 
 .mat-drawer{
   color: whitesmoke;
@@ -40,7 +36,7 @@ mat-icon{
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////// PARTICLES STYLES
+////////////////// PARTICLE STYLES
 
 html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);

@@ -1,27 +1,41 @@
 <div class="contentWrapper" gdAreas=". . . | . main . | . . ." gdGap="10px" gdRows.gt-xs="10fr 60fr 10fr"
   gdRows="10fr 80fr 5fr" gdColumns.gt-xs="19.1fr 61.80fr 19.1fr" gdColumns="5fr 80fr 5fr">
-  <div class="contentContainer transluscentBack" gdArea="main" >
+  <div class="contentContainer transluscentBack" gdArea="main">
 
-    <div class="mx2" fxLayout="column" fxLayoutAlign="center stretch">
-      <div class="toolbar-container">
+    <div class="mx2" gdAreas="header | content" gdgap="5px" gdRows="10% auto" gdColumns="auto">
+      <div gdArea="header" class="toolbar-container">
         <mat-toolbar class="py1" color="primary">
           <span class="">Portfolio</span>
         </mat-toolbar>
         <mat-divider></mat-divider>
       </div>
 
-      <mat-list>
-        <mat-list-item *ngFor="let project of projects">
-          <h3 matLine>
-            <a rel="noreferrer" target="_blank" href="{{project.link}}">
-              <span> {{project.name}} </span>
+      <mat-accordion [ngStyle]="{'overflow':'overlay'}" gdArea="content">
+        <mat-expansion-panel class="transluscentBack" *ngFor="let project of projects">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h3>
+                <span>{{project.name}}</span>
+              </h3>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div>
+            <p>{{project.description}}</p>
+            <br>
+            <h3 >Tech Stack</h3>
+              <div>
+                <button mat-button *ngFor="let block of project.stack" >{{block}}</button>
+              </div>
+          </div>
+          
+          <mat-action-row fxHide="{{project.link === '' ? true:false}}">
+            <a mat-button rel="noreferrer" target="_blank" href="{{project.link}}">
+              <span> Visit project </span>
             </a>
-          </h3>
-          <p matLine> {{project.description | titlecase}} </p>
-        </mat-list-item>
-
-      </mat-list>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
 
   </div>
-</div> 
+</div>

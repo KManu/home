@@ -5,16 +5,19 @@
   <mat-sidenav-container fxFlex fxFlexAlign="center">
 
     <mat-sidenav class="transluscentBack" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-      [fixedInViewport]="mobileQuery.matches" [ngStyle]="{'width': '66vw'}" [ngStyle.gt-xs]="{'width': '33vw'}" opened>
+      [fixedInViewport]="mobileQuery.matches" [ngStyle]="{'width': '66vw'}" [ngStyle.gt-xs]="{'width': '30vw'}" opened>
       <app-menu></app-menu>
     </mat-sidenav>
 
     <mat-sidenav-content>
 
-      <button [fxShow]="!snav.opened" fxHide.gt-xs (click)="snav.toggle()" id="menuButton" mat-icon-button>
-        <mat-icon>menu</mat-icon>
-      </button>
-
+      <div fxLayout="row" fxLayoutAlign="start center" >
+        
+        <button aria-label="Menu toggle button"  (click)="snav.toggle()" id="menuButton" mat-button>
+          <span class="pl2" fxHide={{snav.opened}}>Menu</span>
+          <mat-icon> {{snav.opened === true ? "chevron_left" : "chevron_right"}}  </mat-icon>
+        </button>
+      </div>
       <router-outlet></router-outlet>
     </mat-sidenav-content>
 

@@ -31,6 +31,7 @@ $home-theme: mat-light-theme($home-primary, $home-accent, $home-warn);
 @import 'media-queries.scss';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Quicksand:400,600,700&display=swap');
 
+
 h1,
 h2,
 h3,
@@ -42,7 +43,11 @@ h5 {
 html,
 body,
 .fillParent {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', 'Open Sans';
+}
+
+p, span{
+  color: whitesmoke;
 }
 
 
@@ -56,13 +61,12 @@ app-root {
 body {
   margin: 0;
   background-color: #102027;
-  // background-color: rgba($color: (#102027), $alpha: 0.5);
 }
 
 .transluscentBack,
 .mat-drawer {
   background: rgba(#37464f, 0.3);
-  color: whitesmoke; 
+  
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.1);
