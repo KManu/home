@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
-      - name: NG Build
-        run:  ng build -c production
+      - uses: actions/checkout@v2
       - name: Pushes to another repository
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
