@@ -10,7 +10,7 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Akkadian Provisioning Manager',
       link: 'https://bit.ly/3P2RQVk',
-      description: 'This is a system designed to integrate with Unified Communications environments for businesses such as Cisco Collaboration, Webex and Microsoft Teams, and provide an easy way for business to provision and manage users and devices in these environments. As a full stack software engineer I was responsible for maintenance and enhancements across the application stack.',
+      description: 'This is a system designed to integrate with Unified Communications environments for businesses such as Cisco Collaboration, Webex and Microsoft Teams, and provide an easy way for business to provision and manage users and devices in these environments. As a full stack software engineer I am responsible for maintenance and enhancements across the application stack.',
       stack: ['HTML', 'CSS', 'Javascript','PHP','Jenkins','Git','systemd','RPM Package Development','Python']
     },
     {
@@ -51,14 +51,14 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'CYST Insurance Hub',
       link: 'https://insurance.teamcyst.com',
-      description: 'System for insurance claim management.',
-      stack: ['AngularJS','HTML','CSS','Javascript']
+      description: 'System for insurance claim management. I created the frontend using AngularJS and the backed system using an API on an ExpressJS server, with an MySQL database. I was responsible for it\'s maintenance before it\'s discontinuation.',
+      stack: ['AngularJS','HTML','CSS','Javascript','MySQL','ExpressJS','MySQL']
     },
     {
       name: 'Insights By CYST',
       link: 'https://insights.teamcyst.com',
       description: 'Sentiment analysis tool for website articles and tweets. Feed it a link and it would retrieve the article or tweet contents and give you it\'s sentiment. I created this as a side project exploring the applications of AI.',
-      stack: ['AngularJS','NodeJS','Sentiment Analysis']
+      stack: ['AngularJS','HTML','CSS','Javascript','NodeJS','Sentiment Analysis']
     },
 
   ];
