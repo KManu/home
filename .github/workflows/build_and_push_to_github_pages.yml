@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
+      - name: discovery
+        run:  pwd && ls 
       - name: NG Build
         run:  ng build -c production
       - name: Pushes to another repository
